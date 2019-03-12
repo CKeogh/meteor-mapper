@@ -1,11 +1,13 @@
 import React from 'react';
+import Meteor from './Meteor';
 
 const MeteorList = ({meteors}) => {
-    return <ul>
+    return <table>
+        <th>Name</th><th>Class</th><th>Year</th><th>Mass</th>
         {meteors.map(meteor => {
-            return <li key={meteor.id}>{meteor.name}</li>
+            return <Meteor key={meteor.id}meteor={meteor}/>
         })}
-    </ul>
+    </table>
 }
 
 export default MeteorList;
