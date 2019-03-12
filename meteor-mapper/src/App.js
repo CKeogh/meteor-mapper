@@ -3,7 +3,7 @@ import './App.css';
 import axios from 'axios';
 import MeteorList from './components/MeteorList';
 
-const meteorAPI = 'https://data.nasa.gov/resource/y77d-th95.json'
+const meteorAPI = 'https://data.nasa.gov/resource/y77d-th95.json?$where=year%20%3E%20%222000-01-01T00:00:00.000%22'
 
 
 class App extends Component {
