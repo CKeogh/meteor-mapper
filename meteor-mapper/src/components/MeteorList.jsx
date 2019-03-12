@@ -3,6 +3,7 @@ import Meteor from './Meteor';
 
 const MeteorList = ({ meteors }) => {
     return (
+
         <table>
             <thead>
                 <tr>

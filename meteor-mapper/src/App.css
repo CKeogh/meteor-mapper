@@ -20,3 +20,13 @@ td {
   border: solid 1px #DDD;
   padding: .5rem;
 }
+
+#map {
+    height: 600px;
+ }
+
+ .leaflet-container {
+  /* to fill the CSS grid cell */
+  height: 100%;
+  width: 100%;
+}
