@@ -6,15 +6,18 @@
 .grid-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 6rem 1fr;
+  grid-template-rows: 10rem 1fr;
   grid-template-areas: "header header" "meteors map";
 }
 
 .grid-header { grid-area: header; }
-
 .grid-meteor-list { grid-area: meteors; }
+.grid-meteor-map { grid-area: map;}
 
-.grid-meteor-map { grid-area: map; }
+.grid-header {
+  border-bottom: solid 1px #AAD3DF;
+  margin-bottom: 2rem;
+}
 
 td {
   border: solid 1px #DDD;
@@ -23,7 +26,7 @@ td {
 
 #map {
     height: 600px;
- }
+}
 
  .leaflet-container {
   /* to fill the CSS grid cell */

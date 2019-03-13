@@ -7,7 +7,12 @@ const MeteorList = ({ meteors }) => {
         <table>
             <thead>
                 <tr>
-                    <th>Name</th><th>Class</th><th>Year</th><th>Mass</th>
+                    <th>Name</th>
+                    <th>Class</th>
+                    <th>Year</th>
+                    <th>Mass(grams)</th>
+                    <th>Lat</th>
+                    <th>Lon</th>
                 </tr>
             </thead>
             <tbody>

@@ -7,14 +7,14 @@ import FilterByYear from './components/FilterByYear';
 
 
 class App extends Component {
-  
+
   state = {
     meteors: [],
-    filterByYear: 2005,
+    filterByYear: 2013,
   }
 
   year = this.state.filterByYear;
-  
+
   componentDidMount() {
     const meteorAPI = `https://data.nasa.gov/resource/y77d-th95.json?year=%27${this.state.filterByYear}%27`
     axios.get(meteorAPI)
@@ -27,9 +27,9 @@ class App extends Component {
     const meteorAPI = `https://data.nasa.gov/resource/y77d-th95.json?year=%27${this.state.filterByYear}%27`
     if (this.state.filterByYear !== prevState.filterByYear) {
       axios.get(meteorAPI)
-      .then(({ data }) => {
-        this.setState({ meteors: data })
-      })
+        .then(({ data }) => {
+          this.setState({ meteors: data })
+        })
     }
   }
 
@@ -39,10 +39,10 @@ class App extends Component {
     return (
 
       <div className="App grid-container">
-      <div className='grid-header'>
-        <h1>Meteor Mapper</h1>
-        <FilterByYear handleSelect={this.handleSelect}/>
-      </div>
+        <div className='grid-header'>
+          <h1>Meteor Mapper</h1>
+          <FilterByYear handleSelect={this.handleSelect} />
+        </div>
         <MeteorList className='grid-meteor-list' meteors={this.state.meteors} />
         <MeteorMap className="grid-meteor-map" meteors={this.state.meteors} />
       </div>
@@ -51,7 +51,7 @@ class App extends Component {
 
   handleSelect = (event) => {
     // console.log(event.target.value)
-    this.setState({filterByYear: event.target.value});
+    this.setState({ filterByYear: event.target.value });
   }
 
 }
