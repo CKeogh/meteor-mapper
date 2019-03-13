@@ -11,11 +11,11 @@
 }
 
 .grid-header { grid-area: header; }
-.grid-meteor-list { grid-area: meteors; }
+.grid-meteor-list { grid-area: meteors; height: calc(95vh - 10rem); overflow-y: scroll; }
 .grid-meteor-map { grid-area: map;}
 
 .grid-header {
-  border-bottom: solid 1px #AAD3DF;
+  border-bottom: solid 1px hsl(212, 45%, 77%);
   margin-bottom: 2rem;
 }
 
@@ -33,3 +33,4 @@ td {
   height: 100%;
   width: 100%;
 }
+

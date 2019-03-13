@@ -43,8 +43,8 @@ class App extends Component {
           <h1>Meteor Mapper</h1>
           <FilterByYear handleSelect={this.handleSelect} />
         </div>
-        <MeteorList className='grid-meteor-list' meteors={this.state.meteors} />
-        <MeteorMap className="grid-meteor-map" meteors={this.state.meteors} />
+        <MeteorList meteors={this.state.meteors} />
+        <MeteorMap meteors={this.state.meteors} />
       </div>
     );
   }

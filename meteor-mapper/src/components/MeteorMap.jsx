@@ -14,6 +14,7 @@ class MeteorMap extends Component {
     const position = [this.state.lat, this.state.lon];
 
     return (
+      <div className="grid-meteor-map">
       <Map id="map" center={position} zoom={this.state.zoom}>
         <TileLayer
           attribution='&amp;copy <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
@@ -40,6 +41,7 @@ class MeteorMap extends Component {
         })}
 
       </Map>
+      </div>
     )
   }
 
