@@ -5,7 +5,6 @@ import MeteorList from './components/MeteorList';
 import MeteorMap from './components/MeteorMap';
 import FilterByYear from './components/FilterByYear';
 
-
 class App extends Component {
 
   state = {
@@ -35,9 +34,7 @@ class App extends Component {
 
   render() {
 
-    console.log(this.state.filterByYear)
     return (
-
       <div className="App grid-container">
         <div className='grid-header'>
           <h1>Meteor Mapper</h1>
@@ -50,7 +47,6 @@ class App extends Component {
   }
 
   handleSelect = (event) => {
-    // console.log(event.target.value)
     this.setState({ filterByYear: event.target.value });
   }
 
