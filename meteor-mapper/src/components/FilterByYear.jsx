@@ -1,8 +1,9 @@
 import React from 'react';
 
-const FilterByYear = ({ handleSelect }) => {
+// hardcoded as API limited to 1000 records
+const FilterByYear = ({ handleFilterByYear }) => {
     return (
-        <select onChange={handleSelect}>
+        <select onChange={handleFilterByYear}>
             <option value="2013">2013</option>
             <option value="2012">2012</option>
             <option value="2011">2011</option>

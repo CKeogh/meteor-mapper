@@ -22,6 +22,7 @@
 td {
   border: solid 1px #DDD;
   padding: .5rem;
+  font-size: .75rem;
 }
 
 #map {
@@ -34,3 +35,9 @@ td {
   width: 100%;
 }
 
+.g0 {border-left: 5px solid #F6EE66; }
+.g10 {border-left: 5px solid #FFC300; }
+.g100 {border-left: 5px solid #FF5733; }
+.g1000 {border-left: 5px solid #C70039; }
+.g10000 {border-left: 5px solid #900C3E; }
+.g100000 {border-left: 5px solid #000; }
